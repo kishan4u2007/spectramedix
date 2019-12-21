@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>SpectraMedix</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed sidebar-collapse">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class=" navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+       
+      <li class="nav-item" style="padding-left:12px;">
+        <h2>Client Logo</h2>
+      </li>
+    </ul>
+
+ 
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item d-none d-sm-inline-block active">
+            <a href="#" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link"><i class="fa fa-user-md" aria-hidden="true"></i>
+            </i>
+            </a>
+          </li>
+        
+     
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link"><i class="fa fa-calendar" aria-hidden="true"></i>
+        </a>
+      </li>
+
+      <li>
+        <div class="user-panel d-flex">
+            <div class="image">
+              <img src="img/user2-160x160.jpg" class="img-circle elevation-2-text" alt="User Image">
+            </div>
+            <div class="info">
+                HealthPlan<br> Admin
+            </div>
+          </div>
+      </li>
+
+      <li class="nav-item">
+        <img src="https://www.spectramedix.com/hubfs/SMD_Logo_1808F_Web.png" width="200" alt="User Image">
+      </li>
+     
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="margin-left: 0px !important; margin-top: 0;"> 
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">My Notification</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box">
+              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
+
+              <div class="info-box-content text-right">
+                <h1 class="info-box-text">PATIENT POPULATION </h1>
+                <span class="info-box-number">
+                  3,980
+                </span>
+                <span class="info-box-text">171 NEW PATIENTS</span>
+                
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+         
+          <!-- /.col -->
+
+          <!-- fix for small devices only -->
+          <div class="clearfix hidden-md-up"></div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+
+              <div class="info-box-content text-right">
+                <h1 class="info-box-text">READMISSION %</h1>
+                <span class="info-box-number">7.69%</span>
+                <span class="info-box-text">1 READMITTED TODAY</span>
+              
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box mb-3">
+              <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+
+              <div class="info-box-content text-right">
+                <h1 class="info-box-text">DISCHARGE IN <br>LAST 10 DAYS</h1>
+                <span class="info-box-number" style="padding-bottom:8px;">6</span>
+                
+                
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+            <!-- LINE CHART -->
+            <div class="card">
+                <div class="card-header">Inpatient and Emergency Department Utilization Trend</h3>
+  
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                  </div>
+                </div>
+                <div class="card-body row">
+                    <div class="col-md-9">
+                  <div class="chart">
+                    <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="chart-legend clearfix">
+                        <li><i class="fa fa-square text-danger"></i> ED visit per 1000</li>
+                        <li><i class="fa fa-square text-info"></i> Inpatient Admits per 1000</li>
+                        <li><i class="fa fa-square text-warning"></i> Inpatient Days per 1000</li>
+
+  
+                      </ul>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+        
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+             
+              <!-- /.card-header -->
+              <div class="card-body" style="display: none;">
+                <div class="row">
+                  <div class="col-md-8">
+               
+
+                    <div class="chart">
+                      <!-- Sales Chart Canvas -->
+                      <canvas id="salesChart" height="180" style="height: 180px;"></canvas>
+                    </div>
+                    <!-- /.chart-responsive -->
+                  </div>
+                  <!-- /.col -->
+                
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- ./card-body -->
+       
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <div class="col-md-7">
+      
+            <!-- /.card -->
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Measure Performance & Missing Member Incentives</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-condensed">
+                  <thead>
+                    <tr>
+                    
+                      <th>Measure</th>
+                      <th style="width:200px">Measure Score</th>
+                      <th style="width: 146px">Missing Members <br> 
+                        To Meet Goal</th>
+                      <th style="width: 142px; padding-right: 0;">$ Value per<br> Missing Member</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                   
+                      <td>Medication Management for people with Asthma(MMA)</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-danger bg-danger" style="width: 55%"></div>
+                        </div>
+                      </td>
+                      <td class="text-center text-danger"><span>-235</span></td>
+                      <td class="text-center text-danger">$13,160</td>
+                    </tr>
+                    <tr>
+                   
+                      <td>Medication Management for people with Asthma(MMA)</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar bg-success" style="width: 70%"></div>
+                        </div>
+                      </td>
+                      <td class="text-center"><span class="text-success">Goat Met</span></td>
+                      <td class="text-success text-center">Goat Met</td>
+                    </tr>
+                    <tr>
+                      
+                      <td>Medication Management for people with Asthma(MMA)</td>
+                      <td>
+                        <div class="progress progress-xs progress-danger  active">
+                          <div class="progress-bar bg-danger" style="width: 30%"></div>
+                        </div>
+                      </td>
+                      <td class="text-center text-danger"><span class="text-center">-218 </span></td>
+                      <td class="text-center text-danger">$18,200</td>
+                    </tr>
+                    <tr>
+                      
+                     
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+
+          <!-- /.col -->
+
+          <div class="col-md-5">
+          
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Total Treatment Cost Distribution</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="chart-responsive">
+                      <canvas id="pieChart" height="190"></canvas>
+                      <div class="pieChartText"><h3>$25,826</h3>Total Cost</div>
+                    </div>
+                    <!-- ./chart-responsive -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-md-6">
+                    <ul class="chart-legend clearfix">
+                      <li><i class="fa fa-square text-danger"></i> $8.920 Impatients <span class="float-right ">16%</span></li>
+                      <li><i class="fa fa-square text-success"></i> $4.980 Outpatients <span class="float-right ">22%</span></li>
+                      <li><i class="fa fa-square text-warning"></i> $4.920 Professional services <span class="float-right ">11%</span></li>
+                      <li><i class="fa fa-square text-info"></i> $4.270 Pharmacy <span class="float-right ">39%</span></li>
+                      <li><i class="fa fa-square text-primary"></i> $2.728 Other <span class="float-right ">12%</span></li>
+
+                    </ul>
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.card-body -->
+            
+              <!-- /.footer -->
+            </div>
+            <!-- /.card -->
+
+           
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!--/. container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="footer-text">
+    &copy;  Copyright 2019 SpectraMedix.
+    All rights reserved.
+
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="js/Chart.min.js"></script>
+<!-- PAGE SCRIPTS -->
+<script src="js/dashboard2.js"></script>
+</body>
+</html>
